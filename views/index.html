@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>Find your Representatives</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        input[type="submit"], select {
+            display: block;
+            font-size: medium;
+            padding: 10px;
+            margin: 10px;
+        }
+        .left-side {
+            float: left;
+            width: 50%;
+        }
+        .left-side ul {
+            list-style: none;
+            -webkit-padding-start: 0;
+            width: 90%;
+            font-size: medium;
+        }
+        .left-side ul li.selectable {
+            cursor: pointer;
+        }
+        .left-side ul li {
+            padding: 10px;
+            border-bottom: solid #BBB 1px;
+            display: inline-block;
+            width: 100%;
+        }
+        .left-side ul li.header {
+            background-color: #DDD;
+            border-top: solid #BBB 1px;
+        }
+        .left-side ul li span {
+            float: left;
+            display: inline-block;
+            width: calc(100% - 60px);
+        }
+        .left-side ul li span + span {
+            width: 60px;
+        }
+        .right-side {
+            float: left;
+            width: 50%;
+        }
+        .right-side input {
+            display: block;
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 2px;
+            font-size: medium;
+            background-color: #DDD;
+            border: none;
+        }
+        span.selected {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="react-app">
+    </div>
+    <script src="public/bundle.js"></script>
+</body>
+</html>
